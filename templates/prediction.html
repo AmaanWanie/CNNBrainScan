@@ -1,0 +1,18 @@
+<!-- prediction.html -->
+<html>
+    <head>
+        <title>Image Prediction</title>
+    </head>
+    <body>
+        <h1>Image Prediction</h1>
+        <div>
+            <!-- Use data URI scheme to directly embed the image data -->
+            <img src="{{ image_path }}" alt="Uploaded Image" style="max-width: 500px;">
+        </div>
+        <div>
+            <p>Predicted Class: {{ predicted_class }}</p>
+            <p>Confidence: {{ confidence }}</p>
+            <button><a href="/">home</a></button>
+        </div>
+    </body>
+</html>
